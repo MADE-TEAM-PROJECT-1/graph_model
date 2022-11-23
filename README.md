@@ -1,3 +1,4 @@
+# Description
 Graph embedding model is built using [AmpliGraph](https://docs.ampligraph) library.
 
 The graph consist from:
@@ -14,3 +15,18 @@ After model is trained we can explore knowledge graph:
 - discover new facts: to find new relations (edges) in graph;
 - queries the model with two elements of a triple and returns the `top_n` results of all possible completions ordered by score predicted by the model;
 - return the nearest neighbors of entities.
+
+# Final model
+- is trained for 100 epochs with embedding size 10;
+- knowledge graph is extracted from:
+    - 10763244 REFERENCE edges;
+    - 3414268 COAUTHOR edges;
+    - 3236682 AUTHOR edges;
+- consists of 17414194 embeddings of articles and authors;
+- example of retrieving embedding for articles and authors you can find in [get_embeddings.py](get_embeddings.py)
+- can be downloaded from [gdrive](https://drive.google.com/file/d/1NQsRtoii30h-MkkFbipGKDsrPmQTEY8Y)
+
+    or using `gdown`
+    ```shell
+    gdown --id 1NQsRtoii30h-MkkFbipGKDsrPmQTEY8Y
+    ```
