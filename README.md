@@ -30,3 +30,15 @@ After model is trained we can explore knowledge graph:
     ```shell
     gdown --id 1NQsRtoii30h-MkkFbipGKDsrPmQTEY8Y
     ```
+
+# Embeddings
+You can download embeddings with `emb_dim=10` from gdrive:
+- [articles_embeddings](https://drive.google.com/file/d/1T6qhVNpnzhOcJzM5CIH4sZ52OAumIXs3)
+- [authors_embeddings](https://drive.google.com/file/d/1XWZYopltvEPUv6-p5FLMCxQAIjzlqJYP)
+
+To load embeggins you can you the following function:
+```python
+def load_numpy(filename):
+    with open(filename, 'rb') as f:
+        return np.load(f)
+```
