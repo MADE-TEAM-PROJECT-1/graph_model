@@ -40,5 +40,5 @@ To load embeddings you can use the following function:
 ```python
 def load_numpy(filename: str) -> Dict[str, np.ndarray]:
     with open(filename, 'rb') as f:
-        return np.load(f)
+        return np.load(f, allow_pickle=True).item()
 ```
