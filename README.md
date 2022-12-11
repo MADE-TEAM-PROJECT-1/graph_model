@@ -22,7 +22,7 @@ After model is trained we can explore knowledge graph:
     - 10763244 REFERENCE edges;
     - 3414268 COAUTHOR edges;
     - 3236682 AUTHOR edges;
-- consists of 17414194 embeddings of articles and authors;
+- consists of 2164808 and 1199286 embeddings of articles and authors respectively;
 - example of retrieving embedding for articles and authors you can find in [get_embeddings.py](get_embeddings.py)
 - can be downloaded from [gdrive](https://drive.google.com/file/d/1NQsRtoii30h-MkkFbipGKDsrPmQTEY8Y)
 
